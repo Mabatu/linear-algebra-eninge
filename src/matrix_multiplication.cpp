@@ -7,11 +7,18 @@ void initializeMatrix(int inputMatrix[2][2]){
 		}
 	}
 }
+
 int main(){
 	int matA[2][2];
 	int matB[2][2];
 	
 	initializeMatrix(matA);
 	initializeMatrix(matB);
-	
+
+	for(int i = 0; i < 2; i++){
+		for(int j = 0; j < 2; j++){
+			printf("Enter element [%d][%d] for matrix A: \n", i, j);
+			std::cin >> matA[i][j];
+		}
+	}	
 }
