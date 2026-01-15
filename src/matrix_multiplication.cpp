@@ -17,6 +17,9 @@ void printMatrix(int inputMatrix[2][2]){
 	}	
 }
 
+void multiplyMatrices(int matrixA[2][2], int matrixB[2][2]){
+}
+
 int main(){
 	int matA[2][2];
 	int matB[2][2];
