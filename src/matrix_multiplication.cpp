@@ -18,6 +18,14 @@ void printMatrix(int inputMatrix[2][2]){
 }
 
 void multiplyMatrices(int matrixA[2][2], int matrixB[2][2]){
+	for(int row = 0; row < 2; row++){
+        for(int col = 0; col < 2; col++){
+            for(int k = 0; k < 2; k++){
+            //k is the shared index when multiplying
+            resultMatrix[row][col] += matrixA[row][k] * matrixB[k][col];
+            }
+        }
+    }
 }
 
 int main(){
@@ -46,15 +54,6 @@ int main(){
 	printMatrix(matA);
 	std::cout << "Matrix B is: \n" ;
 	printMatrix(matB);
-	
-	    for(int row = 0; row < 2; row++){
-        for(int col = 0; col < 2; col++){
-            for(int k = 0; k < 2; k++){
-            //k is the shared index when multiplying
-            resultMatrix[row][col] += matA[row][k] * matB[k][col];
-            }
-        }
-    }
 
     printf("the product of matrix A and B is: \n");
     printMatrix(resultMatrix);
