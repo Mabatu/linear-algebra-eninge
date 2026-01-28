@@ -38,23 +38,32 @@ void multiplyMatrices(int matrixA[2][2], int matrixB[2][2], int resultMatrix[2][
 }
 
 int main(){
+	//Declaration of 3 matrices, two to hold inputs and a third to store the product of the two input matrices
 	int matA[2][2];
 	int matB[2][2];
 	int resultMatrix[2][2];
-	
+
+	//set all the elements of the matrices to zero
 	initializeMatrix(matA);
 	initializeMatrix(matB);
 	initializeMatrix(resultMatrix);
 
+	//Prompt user to assign values to the first matrix elements
 	for(int i = 0; i < 2; i++){
 		for(int j = 0; j < 2; j++){
+			//specify element index for user input
 			printf("Enter element [%d][%d] for matrix A: \n", i, j);
+			//store user input in specific matrix index
 			std::cin >> matA[i][j];
 		}
-	}	
+	}
+
+	//Prompt user to assign values to the second matrix elements
 	for(int i = 0; i < 2; i++){
 		for(int j = 0; j < 2; j++){
+			//specify element index for user input
 			printf("Enter element [%d][%d] for matrix B: \n", i, j);
+			//store user input in specific matrix index
 			std::cin >> matB[i][j];
 		}
 	}		
