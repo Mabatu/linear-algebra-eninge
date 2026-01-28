@@ -1,5 +1,6 @@
 #include <iostream>
 
+//A function to set all the elements of a matrix to zero
 void initializeMatrix(int inputMatrix[2][2]){
 	for(int i = 0; i < 2; i++){
 		for(int j = 0; j < 2; j++){
@@ -8,6 +9,7 @@ void initializeMatrix(int inputMatrix[2][2]){
 	}
 }
 
+//A function to print the matrix formatted as rows and columns onto the console
 void printMatrix(int inputMatrix[2][2]){
 	for(int i = 0; i < 2; i++){
 		for(int j = 0; j < 2; j++){
