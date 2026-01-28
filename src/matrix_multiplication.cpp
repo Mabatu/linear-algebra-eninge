@@ -22,9 +22,13 @@ void printMatrix(int inputMatrix[2][2]){
 	}	
 }
 
+//A function that takes two 2 * 2 matrices and computes the product of the matrices
 void multiplyMatrices(int matrixA[2][2], int matrixB[2][2], int resultMatrix[2][2]){
+	//loop through the rows of the result matrix
 	for(int row = 0; row < 2; row++){
+		//loop through columns of the row
         for(int col = 0; col < 2; col++){
+			//for each element of the result matrix, add up components from input matrices
             for(int k = 0; k < 2; k++){
             //k is the shared index when multiplying
             resultMatrix[row][col] += matrixA[row][k] * matrixB[k][col];
