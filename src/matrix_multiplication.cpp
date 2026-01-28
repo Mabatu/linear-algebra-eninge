@@ -11,10 +11,13 @@ void initializeMatrix(int inputMatrix[2][2]){
 
 //A function to print the matrix formatted as rows and columns onto the console
 void printMatrix(int inputMatrix[2][2]){
+	//loop through the rows
 	for(int i = 0; i < 2; i++){
+		//loop through each column ina single row
 		for(int j = 0; j < 2; j++){
 			printf("%d ", inputMatrix[i][j]);
 		}
+		//start a new line at the end of a row
 		printf("\n");
 	}	
 }
